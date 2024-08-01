@@ -1,0 +1,42 @@
+section.home .sectiontitle{
+ 
+}
+.viewmore{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.viewmore:hover{
+    color: var(--secondary-color);
+}
+
+/* .paradiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+} */
+
+
+@media (max-width: 700px) {
+    section.home .sectiontitle{
+        width: 100%;
+    }
+    .home h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+   .viewmore{
+    font-size: 0.8rem;
+   }
+   .paradiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .viewmore1{
+    display: none;
+   }
+  }

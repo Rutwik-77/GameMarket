@@ -1,0 +1,122 @@
+/** @format */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000 !important;
+  background: transparent;
+  padding: 10px 20px;
+ 
+}
+
+.menu {
+  font-size: 1.4rem;
+  color: white;
+  
+}
+.usereItems {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+
+}
+.usereItems .icon {
+
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+}
+.usereItems .icon .like,
+.usereItems .icon .bag {
+
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-weight: 700;
+  width: 15px;
+  height: 15px;
+  background: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px;
+  border-radius: 50%;
+
+}
+
+.usereItems .avatar {
+  width: 160px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+
+  padding: 10px 20px;
+ 
+}
+.usereItems .avatar img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.usereItems .avatar .user{
+    display: flex;
+    flex-direction: column;
+}
+.usereItems .avatar .user span{
+    color: white;
+    font-size: 0.8rem;
+}
+.usereItems .avatar .user a{
+    text-decoration: none;
+    font-size: 0.65rem;
+    color: white;
+}
+
+
+/* Responsivesnes */
+@media (max-width:670px) {
+ header{
+  width: 100%;
+  padding:10px;
+ }
+ .usereItems .icon{
+  width: 28px;
+  height: 28px;
+ }
+ .usereItems .avatar{
+  width: 120px;
+  height: 40px;
+ }
+ .usereItems .avatar img{
+  width: 25px;
+  height: 25px;
+ }
+
+ .usereItems .avatar .user span{
+  font-size: 0.5rem;
+ }
+ .usereItems .avatar .user a{
+  font-size: 0.45rem;
+ }
+  
+}
